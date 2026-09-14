@@ -1,0 +1,282 @@
+{
+  "status": "passed",
+  "chapter": 5,
+  "python": "3.12.14",
+  "method": "exact rational enumeration; floating-point entropy cross-check",
+  "grid": "epsilon = k/20 for k=0,...,10",
+  "latent_assignments_per_parameter": 8,
+  "predictors_per_parameter": 4,
+  "entropy_absolute_tolerance": 1e-12,
+  "empirical_data_used": false,
+  "random_simulation": false,
+  "table_5_1": [
+    {
+      "epsilon": "0",
+      "r": "0",
+      "probabilities_00_01_10_11": [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      "alignment": "1",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "1",
+        "10": "0",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 1.0
+    },
+    {
+      "epsilon": "1/4",
+      "r": "3/8",
+      "probabilities_00_01_10_11": [
+        "5/16",
+        "3/16",
+        "3/16",
+        "5/16"
+      ],
+      "alignment": "5/8",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "5/8",
+        "10": "3/8",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.04556599707503506
+    },
+    {
+      "epsilon": "1/2",
+      "r": "1/2",
+      "probabilities_00_01_10_11": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "alignment": "1/2",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "1/2",
+        "10": "1/2",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.0
+    }
+  ],
+  "all_results": [
+    {
+      "epsilon": "0",
+      "r": "0",
+      "probabilities_00_01_10_11": [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      "alignment": "1",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "1",
+        "10": "0",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 1.0
+    },
+    {
+      "epsilon": "1/20",
+      "r": "19/200",
+      "probabilities_00_01_10_11": [
+        "181/400",
+        "19/400",
+        "19/400",
+        "181/400"
+      ],
+      "alignment": "181/200",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "181/200",
+        "10": "19/200",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.5470574518127168
+    },
+    {
+      "epsilon": "1/10",
+      "r": "9/50",
+      "probabilities_00_01_10_11": [
+        "41/100",
+        "9/100",
+        "9/100",
+        "41/100"
+      ],
+      "alignment": "41/50",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "41/50",
+        "10": "9/50",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.3199229542717201
+    },
+    {
+      "epsilon": "3/20",
+      "r": "51/200",
+      "probabilities_00_01_10_11": [
+        "149/400",
+        "51/400",
+        "51/400",
+        "149/400"
+      ],
+      "alignment": "149/200",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "149/200",
+        "10": "51/200",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.180892820172317
+    },
+    {
+      "epsilon": "1/5",
+      "r": "8/25",
+      "probabilities_00_01_10_11": [
+        "17/50",
+        "4/25",
+        "4/25",
+        "17/50"
+      ],
+      "alignment": "17/25",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "17/25",
+        "10": "8/25",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.0956185422755062
+    },
+    {
+      "epsilon": "1/4",
+      "r": "3/8",
+      "probabilities_00_01_10_11": [
+        "5/16",
+        "3/16",
+        "3/16",
+        "5/16"
+      ],
+      "alignment": "5/8",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "5/8",
+        "10": "3/8",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.04556599707503506
+    },
+    {
+      "epsilon": "3/10",
+      "r": "21/50",
+      "probabilities_00_01_10_11": [
+        "29/100",
+        "21/100",
+        "21/100",
+        "29/100"
+      ],
+      "alignment": "29/50",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "29/50",
+        "10": "21/50",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.01854610496634637
+    },
+    {
+      "epsilon": "7/20",
+      "r": "91/200",
+      "probabilities_00_01_10_11": [
+        "109/400",
+        "91/400",
+        "91/400",
+        "109/400"
+      ],
+      "alignment": "109/200",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "109/200",
+        "10": "91/200",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.005850828519107058
+    },
+    {
+      "epsilon": "2/5",
+      "r": "12/25",
+      "probabilities_00_01_10_11": [
+        "13/50",
+        "6/25",
+        "6/25",
+        "13/50"
+      ],
+      "alignment": "13/25",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "13/25",
+        "10": "12/25",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.0011544640047981974
+    },
+    {
+      "epsilon": "9/20",
+      "r": "99/200",
+      "probabilities_00_01_10_11": [
+        "101/400",
+        "99/400",
+        "99/400",
+        "101/400"
+      ],
+      "alignment": "101/200",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "101/200",
+        "10": "99/200",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 7.213595433840873e-05
+    },
+    {
+      "epsilon": "1/2",
+      "r": "1/2",
+      "probabilities_00_01_10_11": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "alignment": "1/2",
+      "independent": "1/2",
+      "predictor_success_by_outputs_for_A0_A1": {
+        "00": "1/2",
+        "01": "1/2",
+        "10": "1/2",
+        "11": "1/2"
+      },
+      "mutual_information_bits": 0.0
+    }
+  ]
+}

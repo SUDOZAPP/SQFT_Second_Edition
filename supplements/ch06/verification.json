@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "chapter": 6,
+  "python": "3.12.14",
+  "exact_counterexample_norm_squared": "197/125",
+  "first_edition_formation_norm_squared": "10041/10000",
+  "corrected_formation_norm_squared": "1",
+  "table_6_1": [
+    {
+      "state": "rho_plus",
+      "P0": "1/2",
+      "Pplus": "1"
+    },
+    {
+      "state": "rho_minus",
+      "P0": "1/2",
+      "Pplus": "0"
+    },
+    {
+      "state": "rho_mix",
+      "P0": "1/2",
+      "Pplus": "1/2"
+    }
+  ],
+  "exact_matrix_checks": "passed",
+  "floating_absolute_tolerance": 1e-12,
+  "ray_distance_tolerance_near_zero": 1e-07,
+  "global_phase_checks": 20,
+  "ray_triangle_samples": 125,
+  "unitary_trajectory": [
+    {
+      "t": 0,
+      "squared_norm": 1.0
+    },
+    {
+      "t": 0.25,
+      "squared_norm": 0.9999999999999999
+    },
+    {
+      "t": 0.5,
+      "squared_norm": 1.0
+    },
+    {
+      "t": 1,
+      "squared_norm": 0.9999999999999999
+    },
+    {
+      "t": 3.141592653589793,
+      "squared_norm": 1.0
+    }
+  ],
+  "empirical_data_used": false,
+  "random_sampling": false
+}

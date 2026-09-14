@@ -1,0 +1,26 @@
+{
+  "chapter": 4,
+  "arithmetic": "exact fractions",
+  "matrix_basis_tests": 16,
+  "weights": [
+    "0",
+    "1/4",
+    "1/2",
+    "1"
+  ],
+  "weights_meaning": "w = exp(-gamma*t); w=0 includes limiting replacement map",
+  "kraus_completeness": true,
+  "replacement_identity": true,
+  "generator_identity": true,
+  "composition_identity": true,
+  "projection_probability": "1/2",
+  "posterior_trace": "1",
+  "scores": {
+    "0": "1/2",
+    "1/4": "5/8",
+    "1/2": "3/4",
+    "1": "1"
+  },
+  "status": "passed",
+  "scope": "specified algebraic identities and examples; not empirical validation"
+}
