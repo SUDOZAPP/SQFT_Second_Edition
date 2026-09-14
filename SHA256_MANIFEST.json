@@ -1,0 +1,610 @@
+{
+  "assets/cover_opt.jpg": {
+    "bytes": 442730,
+    "sha256": "76a18e14b6aa0ea370078b1bc6064114c53e775703e970d9d1ace35ad315be3e"
+  },
+  "assets/edition.css": {
+    "bytes": 2206,
+    "sha256": "b2500b187b00ab5dbfd26a73b4ea69af11afb6210079d21057e4d3addb8d032b"
+  },
+  "assets/katex/contrib/auto-render.js": {
+    "bytes": 10638,
+    "sha256": "c3a6b981b6ea0e3f3de472f7bddcef78307c7129c1017cd0b19cf9dabb09446a"
+  },
+  "assets/katex/contrib/auto-render.min.js": {
+    "bytes": 3481,
+    "sha256": "7b57d427ac6270677daf8d8380ded2cc73336f9149a167b8e1fe0d6ef66604ae"
+  },
+  "assets/katex/contrib/auto-render.mjs": {
+    "bytes": 6840,
+    "sha256": "42d3240990d45436d6dd4dfb36e7792448cdc2b602c47ac424fd09b1e93dbdfe"
+  },
+  "assets/katex/contrib/copy-tex.js": {
+    "bytes": 4507,
+    "sha256": "2a0cbb0816ea3fa4558b2c810f833fd9c2e293708898c4a1e590617c9ab204eb"
+  },
+  "assets/katex/contrib/copy-tex.min.js": {
+    "bytes": 1673,
+    "sha256": "07770af90943a1de1a1010794bc78c6a7346d46d48fb63e35cc76ba76b827604"
+  },
+  "assets/katex/contrib/copy-tex.mjs": {
+    "bytes": 3640,
+    "sha256": "d037b7c4cdc73420285a580e5b8f9cb441ad67e661fd1ad31dd45aadcf047bf5"
+  },
+  "assets/katex/contrib/mathtex-script-type.js": {
+    "bytes": 4337,
+    "sha256": "26ac089b9fedab2395f2c8f12503ae18ccf2e3be57b22493fb74e50518256f11"
+  },
+  "assets/katex/contrib/mathtex-script-type.min.js": {
+    "bytes": 1308,
+    "sha256": "fea4211d25044a9b76ae3a875c03f743d5805781a27612874cf8b4d4d0819af8"
+  },
+  "assets/katex/contrib/mathtex-script-type.mjs": {
+    "bytes": 751,
+    "sha256": "57f519b2230307c74d08020f52c859c969f5527eb40d24bb8ab3e2167808d5c6"
+  },
+  "assets/katex/contrib/mhchem.js": {
+    "bytes": 78835,
+    "sha256": "c8e407b2d012dfdc5bd94edc96d618ab00476e721ae9d02eca6e3b7933913d44"
+  },
+  "assets/katex/contrib/mhchem.min.js": {
+    "bytes": 33730,
+    "sha256": "f0ca03df194b8c3d6017ff455db6a0ef98857905663fa311a6cded788b15340b"
+  },
+  "assets/katex/contrib/mhchem.mjs": {
+    "bytes": 75577,
+    "sha256": "c5d4b68a7921c218ffdcf4d7c17900d783af7b48430513810cb14e791a54abb4"
+  },
+  "assets/katex/contrib/render-a11y-string.js": {
+    "bytes": 24068,
+    "sha256": "b6e09e4ca9f2075430a50ee6cceb2ea47267614b3fd53c15004ff2f425b2b757"
+  },
+  "assets/katex/contrib/render-a11y-string.min.js": {
+    "bytes": 8472,
+    "sha256": "0e4900f90287ca1e23772f52885d739b569c72e7400e2e2aff3f85076eeed379"
+  },
+  "assets/katex/contrib/render-a11y-string.mjs": {
+    "bytes": 20283,
+    "sha256": "5df820dd9376bd23ef424e5cfc45505d57ae646fb0c5533758e7ad51e048893b"
+  },
+  "assets/katex/fonts/KaTeX_AMS-Regular.ttf": {
+    "bytes": 63632,
+    "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13"
+  },
+  "assets/katex/fonts/KaTeX_AMS-Regular.woff": {
+    "bytes": 33516,
+    "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251"
+  },
+  "assets/katex/fonts/KaTeX_AMS-Regular.woff2": {
+    "bytes": 28076,
+    "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Bold.ttf": {
+    "bytes": 12368,
+    "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Bold.woff": {
+    "bytes": 7716,
+    "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Bold.woff2": {
+    "bytes": 6912,
+    "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Regular.ttf": {
+    "bytes": 12344,
+    "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Regular.woff": {
+    "bytes": 7656,
+    "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c"
+  },
+  "assets/katex/fonts/KaTeX_Caligraphic-Regular.woff2": {
+    "bytes": 6908,
+    "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Bold.ttf": {
+    "bytes": 19584,
+    "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Bold.woff": {
+    "bytes": 13296,
+    "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Bold.woff2": {
+    "bytes": 11348,
+    "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Regular.ttf": {
+    "bytes": 19572,
+    "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Regular.woff": {
+    "bytes": 13208,
+    "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463"
+  },
+  "assets/katex/fonts/KaTeX_Fraktur-Regular.woff2": {
+    "bytes": 11316,
+    "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+  },
+  "assets/katex/fonts/KaTeX_Main-Bold.ttf": {
+    "bytes": 51336,
+    "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8"
+  },
+  "assets/katex/fonts/KaTeX_Main-Bold.woff": {
+    "bytes": 29912,
+    "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822"
+  },
+  "assets/katex/fonts/KaTeX_Main-Bold.woff2": {
+    "bytes": 25324,
+    "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+  },
+  "assets/katex/fonts/KaTeX_Main-BoldItalic.ttf": {
+    "bytes": 32968,
+    "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f"
+  },
+  "assets/katex/fonts/KaTeX_Main-BoldItalic.woff": {
+    "bytes": 19412,
+    "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c"
+  },
+  "assets/katex/fonts/KaTeX_Main-BoldItalic.woff2": {
+    "bytes": 16780,
+    "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+  },
+  "assets/katex/fonts/KaTeX_Main-Italic.ttf": {
+    "bytes": 33580,
+    "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a"
+  },
+  "assets/katex/fonts/KaTeX_Main-Italic.woff": {
+    "bytes": 19676,
+    "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf"
+  },
+  "assets/katex/fonts/KaTeX_Main-Italic.woff2": {
+    "bytes": 16988,
+    "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+  },
+  "assets/katex/fonts/KaTeX_Main-Regular.ttf": {
+    "bytes": 53580,
+    "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830"
+  },
+  "assets/katex/fonts/KaTeX_Main-Regular.woff": {
+    "bytes": 30772,
+    "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc"
+  },
+  "assets/katex/fonts/KaTeX_Main-Regular.woff2": {
+    "bytes": 26272,
+    "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+  },
+  "assets/katex/fonts/KaTeX_Math-BoldItalic.ttf": {
+    "bytes": 31196,
+    "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5"
+  },
+  "assets/katex/fonts/KaTeX_Math-BoldItalic.woff": {
+    "bytes": 18668,
+    "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e"
+  },
+  "assets/katex/fonts/KaTeX_Math-BoldItalic.woff2": {
+    "bytes": 16400,
+    "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+  },
+  "assets/katex/fonts/KaTeX_Math-Italic.ttf": {
+    "bytes": 31308,
+    "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a"
+  },
+  "assets/katex/fonts/KaTeX_Math-Italic.woff": {
+    "bytes": 18748,
+    "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571"
+  },
+  "assets/katex/fonts/KaTeX_Math-Italic.woff2": {
+    "bytes": 16440,
+    "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Bold.ttf": {
+    "bytes": 24504,
+    "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Bold.woff": {
+    "bytes": 14408,
+    "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Bold.woff2": {
+    "bytes": 12216,
+    "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Italic.ttf": {
+    "bytes": 22364,
+    "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Italic.woff": {
+    "bytes": 14112,
+    "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Italic.woff2": {
+    "bytes": 12028,
+    "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Regular.ttf": {
+    "bytes": 19436,
+    "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Regular.woff": {
+    "bytes": 12316,
+    "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605"
+  },
+  "assets/katex/fonts/KaTeX_SansSerif-Regular.woff2": {
+    "bytes": 10344,
+    "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+  },
+  "assets/katex/fonts/KaTeX_Script-Regular.ttf": {
+    "bytes": 16648,
+    "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67"
+  },
+  "assets/katex/fonts/KaTeX_Script-Regular.woff": {
+    "bytes": 10588,
+    "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a"
+  },
+  "assets/katex/fonts/KaTeX_Script-Regular.woff2": {
+    "bytes": 9644,
+    "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+  },
+  "assets/katex/fonts/KaTeX_Size1-Regular.ttf": {
+    "bytes": 12228,
+    "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b"
+  },
+  "assets/katex/fonts/KaTeX_Size1-Regular.woff": {
+    "bytes": 6496,
+    "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9"
+  },
+  "assets/katex/fonts/KaTeX_Size1-Regular.woff2": {
+    "bytes": 5468,
+    "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+  },
+  "assets/katex/fonts/KaTeX_Size2-Regular.ttf": {
+    "bytes": 11508,
+    "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b"
+  },
+  "assets/katex/fonts/KaTeX_Size2-Regular.woff": {
+    "bytes": 6188,
+    "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d"
+  },
+  "assets/katex/fonts/KaTeX_Size2-Regular.woff2": {
+    "bytes": 5208,
+    "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+  },
+  "assets/katex/fonts/KaTeX_Size3-Regular.ttf": {
+    "bytes": 7588,
+    "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082"
+  },
+  "assets/katex/fonts/KaTeX_Size3-Regular.woff": {
+    "bytes": 4420,
+    "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949"
+  },
+  "assets/katex/fonts/KaTeX_Size3-Regular.woff2": {
+    "bytes": 3624,
+    "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+  },
+  "assets/katex/fonts/KaTeX_Size4-Regular.ttf": {
+    "bytes": 10364,
+    "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877"
+  },
+  "assets/katex/fonts/KaTeX_Size4-Regular.woff": {
+    "bytes": 5980,
+    "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58"
+  },
+  "assets/katex/fonts/KaTeX_Size4-Regular.woff2": {
+    "bytes": 4928,
+    "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+  },
+  "assets/katex/fonts/KaTeX_Typewriter-Regular.ttf": {
+    "bytes": 27556,
+    "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
+  },
+  "assets/katex/fonts/KaTeX_Typewriter-Regular.woff": {
+    "bytes": 16028,
+    "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7"
+  },
+  "assets/katex/fonts/KaTeX_Typewriter-Regular.woff2": {
+    "bytes": 13568,
+    "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+  },
+  "assets/katex/katex.css": {
+    "bytes": 31311,
+    "sha256": "9b166b8a2f96d4ca0ef5a07634551405a50d1afe77c79af5c14cb9b57548142e"
+  },
+  "assets/katex/katex.js": {
+    "bytes": 619022,
+    "sha256": "e0cf1ac3508a85a439800821de03c9b77d1bedbdfb47dc70738dc417ea1b5cbe"
+  },
+  "assets/katex/katex.min.css": {
+    "bytes": 23335,
+    "sha256": "717bc9ae7853b61f0f76455dddf0ecd4f527a783f42de2ac24684899c1c46258"
+  },
+  "assets/katex/katex.min.js": {
+    "bytes": 275414,
+    "sha256": "e6bfe5deebd4c7ccd272055bab63bd3ab2c73b907b6e6a22d352740a81381fd4"
+  },
+  "assets/katex/katex.mjs": {
+    "bytes": 606245,
+    "sha256": "3de582c88577c17a667658525d0387138a02467d822fda25cc00e5886ca496ef"
+  },
+  "assets/katex/LICENSE": {
+    "bytes": 1107,
+    "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+  },
+  "assets/katex/README.md": {
+    "bytes": 7268,
+    "sha256": "6ec1a1af148d754646a3ac9bac194608ffac61f3130adb9d9e5078b5d14e4ba1"
+  },
+  "easy.html": {
+    "bytes": 135832,
+    "sha256": "0fea3caad56bec08a983aef7d16a76be9a6379ddaf0a7f329d4ce94b1db6f97b"
+  },
+  "editorial/2026-09-09_ch01.md": {
+    "bytes": 2758,
+    "sha256": "ca32bb59b330a0076023b0e19eb20e046c538a2c38115b1744e83d11c48164d0"
+  },
+  "editorial/2026-09-10_ch02-validation.json": {
+    "bytes": 590,
+    "sha256": "6006b9b170ffd4b84678d9fb0c8ae52f06cb2bdcfba0f27ba66fe0e22ef006c0"
+  },
+  "editorial/2026-09-10_ch02.md": {
+    "bytes": 5992,
+    "sha256": "ab22bd04348ba44038dc5fcd06181cf987e5f342f4b5e14bb20e9a567df0abf5"
+  },
+  "editorial/2026-09-10_easy.md": {
+    "bytes": 1516,
+    "sha256": "932d47cb43d7db6068c910796e1c6380364f613e8f72cdabb1d6b88f60d18d64"
+  },
+  "editorial/2026-09-11_ch03-validation.json": {
+    "bytes": 869,
+    "sha256": "43cecab493e477d535d6b38c9d576eb6f5c429c0e7b9e4048413c792713ff3e6"
+  },
+  "editorial/2026-09-11_ch03.md": {
+    "bytes": 7476,
+    "sha256": "79e6095d49914fea1d5cd4ba35c7d8d70a93d29fa162ca493398882585a87292"
+  },
+  "editorial/2026-09-12_ch04-validation.json": {
+    "bytes": 1488,
+    "sha256": "6874336e0f69ad63e166cd424ccd7e2a11aa17e33ae6efd43bcd7c3b31ef06f4"
+  },
+  "editorial/2026-09-12_ch04.md": {
+    "bytes": 8759,
+    "sha256": "c2496088cf4c6df3a2b3e519176ed6b76f5efccf68b7d59abcfdbc389c7424f7"
+  },
+  "editorial/2026-09-12_single-math-validation.json": {
+    "bytes": 475,
+    "sha256": "6a601613dd57097d2c346e8080500fe672ce6a1471f4a90465f823a53c91b914"
+  },
+  "editorial/2026-09-12_single-math.md": {
+    "bytes": 2399,
+    "sha256": "9bbe845f8158656dd7716bad69deb8f8b09e289f881a915abb466eb6d663da89"
+  },
+  "editorial/2026-09-13_browser-validation.json": {
+    "bytes": 1300,
+    "sha256": "541b58b5406ecc87c02b5bb8a4ca50049266a8478172e124abeb83d14076e142"
+  },
+  "editorial/2026-09-13_ch05-validation.json": {
+    "bytes": 957,
+    "sha256": "fc2bf25de11ee860eb0eb6527584143b7b0e11768636a71220a28211d2366e07"
+  },
+  "editorial/2026-09-13_ch05.md": {
+    "bytes": 10313,
+    "sha256": "84f46f0f7ab8c5a071e06727a91c2dc8c382625b00936c418c4654d02f28983b"
+  },
+  "editorial/2026-09-14_browser-validation.json": {
+    "bytes": 1301,
+    "sha256": "d80e50105c52bdf6d122a505c69f0c1911889be3a0c450e013926ce346df5402"
+  },
+  "editorial/2026-09-14_ch06-validation.json": {
+    "bytes": 912,
+    "sha256": "4503944986c6d71fb792df91b55cd809828aa3d97d86a9fe9a2ff6df26b046ab"
+  },
+  "editorial/2026-09-14_ch06.md": {
+    "bytes": 11588,
+    "sha256": "268f1ac0e01371381bfd5b7d26457e8a711d618ff080500055fb89a1ffff9ee5"
+  },
+  "editorial/automation.json": {
+    "bytes": 178,
+    "sha256": "59a88e9f1aca5d55b4edc5196d740dcfbb11e8aee0edb0031c224a086f59093c"
+  },
+  "editorial/browser-validation.json": {
+    "bytes": 597,
+    "sha256": "12425a3e86b778c8e735b2467d8478d6278b11c7c0b78cb397dd689e0fb607cf"
+  },
+  "editorial/DAILY_WORKFLOW.md": {
+    "bytes": 5821,
+    "sha256": "5d71d58d06f89fbd83dd85c6651b963752aa94098aee325fe24c1dcddd7f95b0"
+  },
+  "editorial/easy-browser-validation.json": {
+    "bytes": 405,
+    "sha256": "30547b142e932d7726af9224debe9d153e0d5ca671618ced3d6a7ab456be9726"
+  },
+  "editorial/easy-validation.json": {
+    "bytes": 306,
+    "sha256": "8291bfc17ddfeb27d970c3250659444c43e77eff477ee465c73b4ec2dfa786cf"
+  },
+  "editorial/EDITORIAL_REQUIREMENTS.md": {
+    "bytes": 5769,
+    "sha256": "1ccdff81ba2f3c1903460144c83b4c81fd53b6b3104af9cd5ddff4d2a01e9a34"
+  },
+  "editorial/originals-validation.json": {
+    "bytes": 93,
+    "sha256": "302a867b29517367bfa9fad5ac889cd2b5048b5e97fc73ffeeada93c718977a5"
+  },
+  "editorial/progress.json": {
+    "bytes": 906,
+    "sha256": "eaaa7f4cb75f23b58f02aa05f45412aea30fcb1878d0716876f452a7d829df67"
+  },
+  "editorial/SQFT_第二版_數學審查與修訂清單.md": {
+    "bytes": 27073,
+    "sha256": "13398388ce9133b619a51e2bda5b96eff2f2337fb3e75351d09d1027d6451c20"
+  },
+  "editorial/SQFT_第二版_核心數學修訂草案.md": {
+    "bytes": 12379,
+    "sha256": "612d9460cfaa44d8ecee8c9dbc8e83ab5e9c0545d95365917867afb527dc0660"
+  },
+  "editorial/validation.json": {
+    "bytes": 277,
+    "sha256": "6e1714257b9f0a0af721cfab5abb10e5860d4070a1d013dc5d4d42ce07b3eb2c"
+  },
+  "index.html": {
+    "bytes": 2160838,
+    "sha256": "2a9b732f26b59aee569d9164540b8a18a7f36fe26264b313051e185552a20dfb"
+  },
+  "originals/About the Author.pdf": {
+    "bytes": 1076009,
+    "sha256": "e13d8278d447f268664e7d35aa6c8556b7c9644baebc328037302e0119e51e08"
+  },
+  "originals/Acknowledgements.pdf": {
+    "bytes": 1177509,
+    "sha256": "e82afcc6abe22d5388d32be5e52f579897b61f887838d4a7b22e478f74dc56ec"
+  },
+  "originals/Afterword The Mathematical Vision of Social Quantum Field Theory.pdf": {
+    "bytes": 1460847,
+    "sha256": "cf9f6c7bd9f3ee7bdcade90746d0d1dc4f018d2057226137dd048b51e84f8856"
+  },
+  "originals/Appendix L ~W.pdf": {
+    "bytes": 15173750,
+    "sha256": "e7c1e6fac39c439f06eef67aa9bad8dbee096a6f844edae654bb504437d227b3"
+  },
+  "originals/Appendix X ~Y.pdf": {
+    "bytes": 1191010,
+    "sha256": "302ea459fdcf97e990b22d1713a77252502bd0be2dbec094a76c713345c0d409"
+  },
+  "originals/Archival Certification.pdf": {
+    "bytes": 1393942,
+    "sha256": "1b38f1f64eec670f72bdac8cd7835512d6561c322e5403f666155aa9eb475b3c"
+  },
+  "originals/cover_opt.jpg": {
+    "bytes": 442730,
+    "sha256": "76a18e14b6aa0ea370078b1bc6064114c53e775703e970d9d1ace35ad315be3e"
+  },
+  "originals/Dedication.pdf": {
+    "bytes": 1060499,
+    "sha256": "76d499ce6c856f76b2773772d9feb0bd7a870e7c2298934da0f217e075635bb9"
+  },
+  "originals/Edition Roadmap.pdf": {
+    "bytes": 6893588,
+    "sha256": "f0098f861d0842754d4c5a0bd1f51113d3be0ce3013d0bb5f16903f26cdf3198"
+  },
+  "originals/Historical Note for Future Editions.pdf": {
+    "bytes": 1543986,
+    "sha256": "ade8cac84ae42b31152ab8ad278a3cd15f77edfab48754bb7d299aea047da47b"
+  },
+  "originals/index.html": {
+    "bytes": 272665,
+    "sha256": "cf8a7ae8d523af60844946337b0c482f65d221a0d091229dca179da07bc1a774"
+  },
+  "originals/Index.pdf": {
+    "bytes": 1451516,
+    "sha256": "11d64f46a8ba749d76678cbeb73598698870f13cff413fa4bfc8cb4ac0a3c04e"
+  },
+  "originals/Librarian's Record. Catalog Entry for the First Edition Archive.pdf": {
+    "bytes": 1318987,
+    "sha256": "7cea4dd801d8385dd3449d384105d82bbc71a2b449a0eabc58b38e5ddfb52634"
+  },
+  "originals/Postscript Reflections on the Mathematical Philosophy of Social Quantum Field Theory.pdf": {
+    "bytes": 1488412,
+    "sha256": "026d54c67b5731db87cd177956cb54c55724258612928829952163c7398ab44b"
+  },
+  "originals/Reader's Guide.pdf": {
+    "bytes": 1478530,
+    "sha256": "51dc5de7d72835637d3e3a3e3d71bb5506a903d6141888a0c9207627721aeb29"
+  },
+  "originals/References.pdf": {
+    "bytes": 1690395,
+    "sha256": "72bd1069a4c0f956db085d63309c08ce3be8d5ce337b1f0fc141c6bf0297ba69"
+  },
+  "originals/Social Quantum Field Theory - Chou I-Hsien (First Edition 2026).pdf": {
+    "bytes": 5422831,
+    "sha256": "e99ebeb00724873cc3d4ecb11786f294bf5a84d0bf319fce83dc5f4cc6ea897d"
+  },
+  "originals/Social Quantum Field Theory 20~30  Volume III.pdf": {
+    "bytes": 14821315,
+    "sha256": "13ff49afca1e43903f45b21e37d2ea3b5f3fbff27d7f81407f32dd807dc6f93e"
+  },
+  "originals/Social Quantum Field Theory 31~40.pdf": {
+    "bytes": 14942628,
+    "sha256": "b427d14ecf156b130d6023fe036a1986f1ccc6fbfd52814f9502f1fa97309358"
+  },
+  "originals/Social Quantum Field Theory 41~51.pdf": {
+    "bytes": 17951108,
+    "sha256": "d0df91d888cb55f72a6a5eb82337900fcc3388a65325a8299d3995c61d9332b2"
+  },
+  "originals/Social Quantum Field Theory.  First Edition (2026) 11~19 Volume II.pdf": {
+    "bytes": 18638837,
+    "sha256": "b204a7210feeedce70c8fa4b58a84f22fe8b124f7342123430d984c0047b9564"
+  },
+  "originals/Social Quantum Field Theory. First Edition (2026) 1~10 Volume I.pdf": {
+    "bytes": 11380657,
+    "sha256": "fe246f8d38d766a4784e100d8809edb297acfce4bf49db7e51b6cd7dfbfe6ab5"
+  },
+  "originals/Social Quantum Field Theory. README.pdf": {
+    "bytes": 8578253,
+    "sha256": "08d265b84e6ffa4e023aedb0be61c27e22b0e0dc5ebbd0742130351f509c0e15"
+  },
+  "README.md": {
+    "bytes": 7667,
+    "sha256": "2afd282c244b36bc5666b92fc020e919c5a98a57d5a4573301638495856ed776"
+  },
+  "source/easy/chapters.txt": {
+    "bytes": 63267,
+    "sha256": "58f1f2d0b95fcc498922c4245f6f79593a88f367acdb6573eb85989d92987858"
+  },
+  "source/manuscript.html": {
+    "bytes": 369347,
+    "sha256": "8e7ad6fb649a1ee6dd7d90c291713e2f53a17c9dd0d2ba3670d061149598f9ea"
+  },
+  "supplements/ch04/README.md": {
+    "bytes": 2523,
+    "sha256": "97704351917c44459d862a4673f21a534628295bee4b75c8208091b7a7ab74f7"
+  },
+  "supplements/ch04/verification.json": {
+    "bytes": 623,
+    "sha256": "fcb45aeadef12be53e9dabe1844043dce644dbb728bf2fd588744a0d70a66b7e"
+  },
+  "supplements/ch04/verify_ch04.py": {
+    "bytes": 3079,
+    "sha256": "fb3783112cf2ec738ae5316fb205ae82e9c3bd3f5798dcf4c7a8be49b736f74b"
+  },
+  "supplements/ch05/README.md": {
+    "bytes": 3547,
+    "sha256": "804692f2cae25b43bf1939d5261d38f8ac45f33ce78b3c62ec7644fbc57c5ea6"
+  },
+  "supplements/ch05/verification.json": {
+    "bytes": 6508,
+    "sha256": "f1579484ef30fda739e92a0a1fd99e099a989a2a21d458973e0ad48287fb34ca"
+  },
+  "supplements/ch05/verify_ch05.py": {
+    "bytes": 5046,
+    "sha256": "a5c3ae1118ab856395f389ba29e052111643f543a66e0a8f753247e88aac7c21"
+  },
+  "supplements/ch06/README.md": {
+    "bytes": 3620,
+    "sha256": "6c32408e52e706f99e3f93a1cb57708f1b141400fb355aa7d48fb8ee0a6ac849"
+  },
+  "supplements/ch06/verification.json": {
+    "bytes": 1111,
+    "sha256": "82aac2795306daa664479de85cb40f727918b17c26aacfee711ca426adf617ac"
+  },
+  "supplements/ch06/verify_ch06.py": {
+    "bytes": 6742,
+    "sha256": "95a0ad6198124d8ba26869f44a65a6b43c296134b6ecc33fcc0856f7fe1ab9a4"
+  },
+  "tools/backup.py": {
+    "bytes": 1667,
+    "sha256": "8cd3fd09af6ad99fe04ba92c3bded638400c3885b21ee36a6cbfd200cf9046d1"
+  },
+  "tools/build.py": {
+    "bytes": 4991,
+    "sha256": "1c281a721110a6642246e503d65da8fa54f37f8828dd8df69d5aaf082ca3670d"
+  },
+  "tools/build_easy.py": {
+    "bytes": 11717,
+    "sha256": "0db4cb8ff53af77a0be60276cfab3bc61416819b6fdb128bedb149fa7b919fd8"
+  },
+  "tools/render_math.cjs": {
+    "bytes": 1019,
+    "sha256": "aae9c90fc8fd39e47c3508f915acfe1993d66a1ff72a385604bfb05e4dcdc7d5"
+  }
+}
