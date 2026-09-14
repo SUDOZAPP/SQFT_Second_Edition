@@ -1,0 +1,28 @@
+html {font-size:18px;scroll-behavior:smooth;}
+:root {--measure:58rem;--font-en:Georgia,"Times New Roman",serif;--font-zh:"Noto Serif TC","Microsoft JhengHei",serif;}
+.container {max-width:58rem;}
+.edition-notice {max-width:58rem;margin:2rem auto;padding:1.6rem 2rem;background:#e9eff5;border-left:5px solid #244668;color:#19334d;font-family:Georgia,"Microsoft JhengHei",serif;}
+.edition-notice strong {letter-spacing:.09em;font-size:.9rem;}
+.edition-notice p {margin:.55rem 0;}
+.edition-notice a {color:#244668;text-decoration:underline;}
+.edition-notice .archive-note {font-size:.8rem;color:#536477;}
+.revision-badge {font-family:system-ui,"Microsoft JhengHei",sans-serif;font-size:.72rem;letter-spacing:.025em;margin:.5rem 0 1.5rem;color:#6b6255;}
+.revision-badge.revised {color:#23654e;}
+.chapter-revised .para {margin:1.25rem 0;}
+.chapter-revised .para .en {line-height:1.85;}
+.chapter-revised .para .zh {line-height:1.95;color:#514b42;margin-top:.55rem;}
+.chapter-revised h3:not([id]) {margin-top:2.2rem;}
+.equation {padding:.4rem 0;margin:1.3rem 0;overflow-x:auto;}
+.katex {font-size:1.06em;}
+.katex-display {overflow-x:auto;overflow-y:hidden;padding:.45rem .2rem;}
+.chapter-references {padding-left:1.5rem;font-size:.88rem;}
+.chapter-references li {margin:.8rem 0;}
+.chapter-references .zh {display:block;margin-top:.25rem;}
+#figure5-1 {overflow-x:auto;}
+#figure5-1 > svg {min-width:560px;}
+.theorem {border-left:3px solid #9eaec0;padding:.2rem 1rem;background:#f5f7f9;}
+h2,h3,.revision-badge {break-after:avoid;}
+.para,.equation {orphans:3;widows:3;}
+@media(max-width:700px){html{font-size:16px}.container{padding:1.5rem 1rem}.edition-notice{margin:0;padding:1.3rem}.front-matter{padding:1.2rem!important}.nav-bar{position:static;}.katex{font-size:1em;}}
+@media(max-width:700px){.katex-display{text-align:left}.katex-display>.katex{display:inline-block;width:max-content;min-width:100%}.katex-display>.katex>.katex-html{padding-right:3.8em}}
+@media print{.nav-bar,.cover,.edition-notice a{display:none}.container{max-width:none;padding:0}html{font-size:11pt}.edition-notice{margin:0 0 1rem}.katex-display{overflow:visible}.front-matter{box-shadow:none;}.chapter-revised h3[id]{break-before:page;}}
