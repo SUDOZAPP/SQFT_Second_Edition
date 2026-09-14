@@ -1,0 +1,54 @@
+{
+  "version": "0.5.0",
+  "date": "2026-09-13",
+  "reports": [
+    {
+      "formulas": 1251,
+      "mathml": 0,
+      "duplicateBranches": 0,
+      "labels": true,
+      "errors": 0,
+      "overflow": false,
+      "brokenImages": [],
+      "brokenAnchors": [],
+      "replacementCharacter": false,
+      "file": "index.html",
+      "chapterHeadings": 50,
+      "pairs": true,
+      "equationCount": 9,
+      "chapterLinks": [
+        "supplements/ch05/verify_ch05.py",
+        "supplements/ch05/README.md",
+        "supplements/ch05/verification.json",
+        "supplements/ch05/verify_ch05.py",
+        "supplements/ch05/README.md",
+        "supplements/ch05/verification.json"
+      ],
+      "mobileOverflow": false,
+      "supplementLinksExist": true
+    },
+    {
+      "formulas": 3,
+      "mathml": 0,
+      "duplicateBranches": 0,
+      "labels": true,
+      "errors": 0,
+      "overflow": false,
+      "brokenImages": [],
+      "brokenAnchors": [],
+      "replacementCharacter": false,
+      "file": "easy.html",
+      "chapters": 50,
+      "pairs": 150,
+      "bilingual": true,
+      "academicLinks": 50,
+      "forbiddenLabel": false,
+      "mobileOverflow": false,
+      "academicNavigation": true,
+      "returnNavigation": true
+    }
+  ],
+  "remote": [],
+  "failed": [],
+  "errors": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.6.0",
+  "chapters": 50,
+  "bilingual_chapter_pairs": 150,
+  "math_expressions": 3,
+  "math_errors": 0,
+  "source": "source/easy/chapters.txt",
+  "output": "easy.html",
+  "purpose": "Accessible chapter-by-chapter adaptation, not complete proofs or an independent certification."
+}

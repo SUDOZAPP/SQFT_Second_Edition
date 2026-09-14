@@ -1,0 +1,26 @@
+{
+  "version": "0.4.1",
+  "reports": [
+    {
+      "formulas": 1159,
+      "mathml": 0,
+      "duplicateBranches": 0,
+      "labels": true,
+      "errors": 0,
+      "overflow": false,
+      "file": "index.html",
+      "mobileOverflow": false
+    },
+    {
+      "formulas": 3,
+      "mathml": 0,
+      "duplicateBranches": 0,
+      "labels": true,
+      "errors": 0,
+      "overflow": false,
+      "file": "easy.html",
+      "mobileOverflow": false
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-10",
+  "chapter": 2,
+  "version": "0.2.0",
+  "outside_chapter2_unchanged": true,
+  "originals_unchanged_count": 23,
+  "exact_probability_checks": "passed; normalization, conditional factorization and marginal nonfactorization",
+  "joint_probabilities": {
+    "(0, 0)": "1/2",
+    "(0, 1)": "0",
+    "(1, 0)": "0",
+    "(1, 1)": "1/2"
+  },
+  "separate_volume_review": "Volume I PDF pages 8–14 visually read; Chapter 2 title located on page 7",
+  "limitations": "KaTeX syntax validation does not certify mathematical validity of unreviewed chapters."
+}

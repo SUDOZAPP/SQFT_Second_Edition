@@ -1,0 +1,25 @@
+{
+  "edition": "Second Edition Working Manuscript",
+  "version": "0.6.0",
+  "timezone": "Asia/Taipei",
+  "last_revision_date": "2026-09-14",
+  "completed_chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "next_chapter": 7,
+  "total_chapters": 50,
+  "status": "chapter_revision_in_progress",
+  "meaning_of_completed": "Revised draft with stated assumptions, bilingual review and KaTeX validation; not independent mathematical certification.",
+  "daily_policy": "One chapter per Asia/Taipei calendar day. Do not advance if already completed today, unless the user explicitly requests it.",
+  "canonical_source": "source/manuscript.html",
+  "original_archive": "originals/",
+  "daily_backup": "../backups/SQFT_v{version}_{date}_through_ch{chapter}_FULL.zip",
+  "accessible_edition": "easy.html",
+  "accessible_source": "source/easy/chapters.txt",
+  "math_output": "html"
+}

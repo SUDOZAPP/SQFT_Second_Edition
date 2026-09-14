@@ -1,0 +1,20 @@
+{
+  "formulas": 3,
+  "mathml": 0,
+  "duplicateBranches": 0,
+  "labels": true,
+  "errors": 0,
+  "overflow": false,
+  "brokenImages": [],
+  "brokenAnchors": [],
+  "replacementCharacter": false,
+  "file": "easy.html",
+  "chapters": 50,
+  "pairs": 150,
+  "bilingual": true,
+  "academicLinks": 50,
+  "forbiddenLabel": false,
+  "mobileOverflow": false,
+  "academicNavigation": true,
+  "returnNavigation": true
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.5.0",
+  "date": "2026-09-13",
+  "chapter": 5,
+  "outside_chapter5_unchanged_except_toc_title": true,
+  "originals_unchanged": 23,
+  "proof_review": "General joint law, diagonal separability, entropy, normalization and prediction proof reviewed algebraically; finite exact grid checked separately.",
+  "supplement_status": "passed",
+  "inventory": {
+    "figures": [
+      "figure5-1"
+    ],
+    "tables": [
+      "table5-1"
+    ],
+    "appendices": [
+      "appendix5a"
+    ],
+    "propositions": [
+      "5.1",
+      "5.2"
+    ],
+    "equations": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8",
+      "5.9"
+    ],
+    "supplement_files": [
+      "supplements/ch05/verify_ch05.py",
+      "supplements/ch05/README.md",
+      "supplements/ch05/verification.json"
+    ],
+    "empirical_datasets": [],
+    "missing_referenced_items": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "version": "0.4.0",
+  "date": "2026-09-12",
+  "chapter": 4,
+  "outside_chapter4_unchanged": true,
+  "originals_unchanged": 23,
+  "proof_review": "Projection normalization and constructive finite realization checked algebraically.",
+  "supplement_check": {
+    "chapter": 4,
+    "arithmetic": "exact fractions",
+    "matrix_basis_tests": 16,
+    "weights": [
+      "0",
+      "1/4",
+      "1/2",
+      "1"
+    ],
+    "weights_meaning": "w = exp(-gamma*t); w=0 includes limiting replacement map",
+    "kraus_completeness": true,
+    "replacement_identity": true,
+    "generator_identity": true,
+    "composition_identity": true,
+    "projection_probability": "1/2",
+    "posterior_trace": "1",
+    "scores": {
+      "0": "1/2",
+      "1/4": "5/8",
+      "1/2": "3/4",
+      "1": "1"
+    },
+    "status": "passed",
+    "scope": "specified algebraic identities and examples; not empirical validation"
+  },
+  "inventory": {
+    "tables": [
+      "table4-1"
+    ],
+    "appendices": [
+      "appendix4a"
+    ],
+    "propositions": [
+      "4.1",
+      "4.2"
+    ],
+    "equations": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8"
+    ],
+    "supplement_files": [
+      "supplements/ch04/verify_ch04.py",
+      "supplements/ch04/README.md",
+      "supplements/ch04/verification.json"
+    ],
+    "empirical_figures_or_datasets": [],
+    "missing_referenced_items": []
+  }
+}

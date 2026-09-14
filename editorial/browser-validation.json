@@ -1,0 +1,25 @@
+{
+  "formulas": 1315,
+  "mathml": 0,
+  "duplicateBranches": 0,
+  "labels": true,
+  "errors": 0,
+  "overflow": false,
+  "brokenImages": [],
+  "brokenAnchors": [],
+  "replacementCharacter": false,
+  "file": "index.html",
+  "chapterHeadings": 50,
+  "pairs": true,
+  "equationCount": 15,
+  "chapterLinks": [
+    "supplements/ch06/verify_ch06.py",
+    "supplements/ch06/README.md",
+    "supplements/ch06/verification.json",
+    "supplements/ch06/verify_ch06.py",
+    "supplements/ch06/README.md",
+    "supplements/ch06/verification.json"
+  ],
+  "mobileOverflow": false,
+  "supplementLinksExist": true
+}
