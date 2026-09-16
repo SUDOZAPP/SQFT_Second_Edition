@@ -2,237 +2,198 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <title>Social Quantum Field Theory — First Edition Archive | 第一版原檔目錄</title>
   <meta name="author" content="周易先 (Chou I-Hsien)" />
-  <meta name="description" content="第一版原樣 PDF 檔案索引：依學術書閱讀順序瀏覽前後置、分卷正文與附錄，並可在頁面內開啟個別 PDF。" />
+  <meta name="description" content="第一版原樣 PDF 檔案索引：依學術書閱讀順序瀏覽前後置、分卷正文與附錄。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --navy: #070b18;
       --navy-2: #10182c;
-      --panel: #121a30;
-      --panel-2: #182238;
       --ink: #e8e4d8;
       --muted: #9aa3b8;
       --gold: #d4af77;
       --gold-2: #f0d9a8;
       --line: rgba(212, 175, 119, 0.22);
-      --cyan: #7ec8e8;
-      --danger: #c48b6a;
-      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --safe-t: env(safe-area-inset-top, 0px);
+      --safe-b: env(safe-area-inset-bottom, 0px);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
+    html, body { height: 100%; background: var(--navy); color: var(--ink); }
     body {
-      background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(80, 120, 200, 0.18), transparent 55%),
-        radial-gradient(900px 500px at 90% 0%, rgba(212, 175, 119, 0.08), transparent 50%),
-        var(--navy);
-      color: var(--ink);
       font-family: Inter, "Noto Sans TC", system-ui, sans-serif;
-      letter-spacing: 0.01em;
+      -webkit-text-size-adjust: 100%;
     }
     a { color: var(--gold-2); }
-    .app {
-      display: grid;
-      grid-template-columns: 380px 1fr;
-      grid-template-rows: 64px 1fr;
-      height: 100%;
-      min-height: 100dvh;
-    }
-    header {
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0 1.15rem;
-      border-bottom: 1px solid var(--line);
-      background: rgba(7, 11, 24, 0.82);
-      backdrop-filter: blur(16px);
-    }
-    .brand { display: flex; align-items: baseline; gap: 0.7rem; min-width: 0; }
-    .brand strong {
-      font-family: "Cormorant Garamond", "Noto Serif TC", serif;
-      font-size: 1.28rem;
-      font-weight: 600;
-      color: var(--gold-2);
-      white-space: nowrap;
-    }
-    .brand em {
-      font-style: normal;
-      color: var(--muted);
-      font-size: 0.78rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .header-actions { display: flex; gap: 0.45rem; flex-wrap: wrap; }
     button, .btn {
       appearance: none;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
+      background: rgba(255,255,255,0.05);
       color: var(--ink);
       border-radius: 999px;
-      padding: 0.42rem 0.8rem;
-      font-size: 0.78rem;
+      padding: 0.55rem 0.85rem;
+      font-size: 0.82rem;
       cursor: pointer;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      justify-content: center;
+      gap: 0.3rem;
+      min-height: 40px;
+      -webkit-tap-highlight-color: transparent;
     }
-    button:hover, .btn:hover { border-color: var(--gold); color: var(--gold-2); }
-    button:disabled { opacity: 0.35; cursor: not-allowed; }
-    aside {
-      border-right: 1px solid var(--line);
-      background: linear-gradient(180deg, var(--navy-2), var(--navy));
-      overflow: auto;
-      padding: 1.1rem 1rem 2.5rem;
+    button:disabled { opacity: 0.35; }
+    .btn-gold {
+      background: linear-gradient(180deg, #e4c48a, #c49a55);
+      color: #1a1408;
+      border-color: #e8d3a4;
+      font-weight: 600;
     }
+
+    .app {
+      min-height: 100dvh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      padding: calc(0.55rem + var(--safe-t)) 0.8rem 0.55rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(7, 11, 24, 0.94);
+    }
+    .brand strong {
+      font-family: "Cormorant Garamond", "Noto Serif TC", serif;
+      font-size: 1.12rem;
+      color: var(--gold-2);
+    }
+    .brand em { display: none; color: var(--muted); font-style: normal; font-size: 0.75rem; }
+    .header-actions { display: flex; gap: 0.35rem; flex-shrink: 0; }
+    .header-actions .desk-only { display: none; }
+
+    .stage { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+    aside, .reader { min-height: 0; }
+
+    aside { padding: 0.9rem 0.85rem calc(1.4rem + var(--safe-b)); }
     .cover-wrap {
-      border-radius: 12px;
+      width: min(42vw, 168px);
+      margin: 0 auto 0.85rem;
+      border-radius: 10px;
       overflow: hidden;
       border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      margin-bottom: 1rem;
-      background: #000;
     }
     .cover-wrap img { width: 100%; display: block; }
-    .lede {
-      font-size: 0.82rem;
-      color: var(--muted);
-      line-height: 1.65;
-      margin-bottom: 1.1rem;
-    }
-    .lede .zh { font-family: "Noto Serif TC", serif; color: #c9c3b4; display: block; margin-top: 0.25rem; }
+    .lede { font-size: 0.8rem; color: var(--muted); line-height: 1.55; margin-bottom: 0.85rem; text-align: center; }
+    .lede .zh { display: block; font-family: "Noto Serif TC", serif; color: #c9c3b4; margin-top: 0.2rem; }
     .search {
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
       background: #0c1426;
       border: 1px solid var(--line);
       color: var(--ink);
-      border-radius: 10px;
-      padding: 0.62rem 0.75rem;
-      font-size: 0.86rem;
+      border-radius: 12px;
+      padding: 0.72rem 0.8rem;
+      font-size: 16px; /* iOS zoom prevent */
     }
-    .group { margin-bottom: 1.15rem; }
+    .group { margin-bottom: 1rem; }
     .group h2 {
-      font-size: 0.68rem;
-      letter-spacing: 0.16em;
+      font-size: 0.66rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold);
-      margin: 0.2rem 0 0.45rem;
-      font-weight: 600;
+      margin: 0.15rem 0 0.4rem;
     }
     .item {
       width: 100%;
       text-align: left;
-      border-radius: 10px;
-      padding: 0.62rem 0.7rem;
-      margin-bottom: 0.32rem;
+      border-radius: 12px;
+      padding: 0.72rem 0.7rem;
+      margin-bottom: 0.38rem;
       border: 1px solid transparent;
-      background: transparent;
+      background: rgba(255,255,255,0.03);
       display: grid;
-      grid-template-columns: 2.1rem 1fr auto;
-      gap: 0.55rem;
+      grid-template-columns: 2.2rem 1fr auto;
+      gap: 0.5rem;
       align-items: start;
     }
-    .item:hover { background: rgba(255,255,255,0.04); }
-    .item.active {
-      background: linear-gradient(90deg, rgba(212,175,119,0.16), rgba(126,200,232,0.06));
-      border-color: var(--line);
-    }
-    .num {
-      font-family: "Cormorant Garamond", serif;
-      color: var(--gold);
-      font-size: 1.05rem;
-      line-height: 1.2;
-    }
-    .item .title { font-size: 0.84rem; color: var(--ink); line-height: 1.35; }
-    .item .sub {
-      display: block;
-      font-family: "Noto Serif TC", serif;
-      color: var(--muted);
-      font-size: 0.75rem;
-      margin-top: 0.12rem;
-    }
-    .meta { color: var(--muted); font-size: 0.68rem; white-space: nowrap; padding-top: 0.15rem; }
-    main {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      min-width: 0;
+    .item.active { border-color: var(--line); background: rgba(212,175,119,0.14); }
+    .num { font-family: "Cormorant Garamond", serif; color: var(--gold); font-size: 1.05rem; }
+    .item .title { font-size: 0.88rem; line-height: 1.35; }
+    .item .sub { display: block; font-family: "Noto Serif TC", serif; color: var(--muted); font-size: 0.75rem; margin-top: 0.12rem; }
+    .meta { color: var(--muted); font-size: 0.68rem; padding-top: 0.18rem; white-space: nowrap; }
+
+    .reader {
+      display: none;
+      flex-direction: column;
       background: #0a1020;
+      min-height: 70dvh;
     }
-    .reader-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.8rem;
-      padding: 0.7rem 1rem;
-      border-bottom: 1px solid var(--line);
-      background: rgba(16, 24, 44, 0.9);
-    }
-    .now { min-width: 0; }
-    .now .kicker { color: var(--gold); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; }
-    .now h1 {
+    body.reading aside { display: none; }
+    body.reading .reader { display: flex; flex: 1; }
+    .reader-bar { padding: 0.75rem 0.85rem 0.65rem; border-bottom: 1px solid var(--line); }
+    .kicker { color: var(--gold); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .reader-bar h1 {
       font-family: "Cormorant Garamond", "Noto Serif TC", serif;
-      font-size: clamp(1.05rem, 2vw, 1.55rem);
+      font-size: 1.2rem;
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.3;
+      margin: 0.15rem 0;
     }
-    .now .zh { color: var(--muted); font-size: 0.86rem; font-family: "Noto Serif TC", serif; }
+    .reader-bar .zh { color: var(--muted); font-size: 0.82rem; font-family: "Noto Serif TC", serif; }
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.45rem;
+      padding: 0.7rem 0.85rem;
+    }
+    .actions .btn-gold { grid-column: 1 / -1; min-height: 46px; }
     .viewer {
       position: relative;
-      min-height: 0;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.015), transparent 80px),
-        #0b101d;
-    }
-    .empty, .viewer iframe, .viewer object, .viewer embed {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+      flex: 1;
+      min-height: 58dvh;
       background: #111;
     }
-    .empty {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      color: var(--muted);
-      gap: 0.7rem;
+    .viewer iframe, .empty, .fail {
+      position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
     }
-    .empty h2 {
-      font-family: "Cormorant Garamond", serif;
-      color: var(--gold-2);
-      font-size: 2rem;
-      font-weight: 600;
+    .empty, .fail {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 1.2rem; color: var(--muted); gap: 0.55rem;
     }
+    .fail { display: none; }
+    .hidden { display: none !important; }
     .foot {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.65rem 1rem 0.8rem;
+      padding: 0.55rem 0.85rem calc(0.8rem + var(--safe-b));
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 0.75rem;
+      font-size: 0.72rem;
+      line-height: 1.5;
     }
-    .note { max-width: 46rem; line-height: 1.55; }
-    .hidden { display: none !important; }
-    @media (max-width: 980px) {
-      .app { grid-template-columns: 1fr; grid-template-rows: 58px auto 1fr; }
-      aside { border-right: 0; border-bottom: 1px solid var(--line); max-height: 46vh; }
-      .cover-wrap { max-width: 280px; }
-      main { min-height: 54vh; }
+
+    @media (min-width: 900px) {
+      .app { display: grid; grid-template-columns: 360px 1fr; grid-template-rows: auto 1fr; height: 100dvh; }
+      header { grid-column: 1 / -1; }
+      .stage { display: contents; }
+      aside, .reader { display: block; overflow: auto; }
+      body.reading aside { display: block; }
+      .reader { min-height: 0; display: flex; }
+      .brand em { display: inline; margin-left: 0.55rem; }
+      .header-actions .desk-only { display: inline-flex; }
+      .cover-wrap { width: 100%; max-width: 220px; margin-left: 0; }
+      .lede { text-align: left; }
+      .viewer { min-height: auto; }
+      aside { border-right: 1px solid var(--line); overflow: auto; }
     }
   </style>
 </head>
@@ -241,156 +202,94 @@
     <header>
       <div class="brand">
         <strong>SQFT Archive</strong>
-        <em>First Edition 2026 · 周易先 Chou I-Hsien</em>
+        <em>First Edition 2026</em>
       </div>
       <div class="header-actions">
+        <button type="button" id="btn-back" class="hidden">目錄</button>
         <button type="button" id="btn-prev">上一篇</button>
         <button type="button" id="btn-next">下一篇</button>
-        <a class="btn" id="btn-open" href="#" target="_blank" rel="noopener">開新分頁</a>
-        <a class="btn" id="btn-download" href="#" download>下載 PDF</a>
       </div>
     </header>
 
-    <aside>
-      <div class="cover-wrap">
-        <img id="cover" alt="Social Quantum Field Theory cover" />
-      </div>
-      <p class="lede">
-        An archival reading desk for the byte-preserved first-edition PDFs.
-        <span class="zh">第一版原樣 PDF 檔案索引。依學術書順序瀏覽，點選即可在右側閱讀，亦可開新分頁或下載。</span>
-      </p>
-      <input class="search" id="search" type="search" placeholder="搜尋篇名、卷次、附錄…" />
-      <nav id="toc"></nav>
-    </aside>
+    <div class="stage">
+      <aside id="shelf">
+        <div class="cover-wrap"><img id="cover" alt="SQFT cover" /></div>
+        <p class="lede">
+          First-edition PDFs in book order.
+          <span class="zh">第一版原樣 PDF。手機請點篇目，再用「開啟 PDF」閱讀全文。</span>
+        </p>
+        <input class="search" id="search" type="search" placeholder="搜尋篇名、卷次…" enterkeyhint="search" />
+        <nav id="toc"></nav>
+      </aside>
 
-    <main>
-      <div class="reader-bar">
-        <div class="now">
-          <div class="kicker" id="kicker">First Edition Archive</div>
+      <section class="reader" id="reader">
+        <div class="reader-bar">
+          <div class="kicker" id="kicker">Archive</div>
           <h1 id="now-title">選擇一篇開始閱讀</h1>
-          <div class="zh" id="now-zh">請從左側目錄點選 PDF，像翻一本學術書一樣依序前進。</div>
+          <div class="zh" id="now-zh">直式手機以系統閱讀器開啟 PDF，較不容易空白。</div>
         </div>
-        <div id="now-size" class="meta"></div>
-      </div>
-      <div class="viewer">
-        <div class="empty" id="empty">
-          <h2>Read as a book</h2>
-          <p>Front matter → Volumes I–V → Afterword, appendices, references, index.</p>
-          <p>前置 → 分卷正文 → 後記、附錄、文獻與索引。</p>
+        <div class="actions">
+          <a class="btn btn-gold" id="btn-open" href="#" target="_blank" rel="noopener">開啟 PDF（建議）</a>
+          <a class="btn" id="btn-download" href="#" download>下載</a>
+          <a class="btn" id="btn-github" href="#" target="_blank" rel="noopener">GitHub 原檔</a>
         </div>
-        <iframe id="frame" class="hidden" title="PDF reader"></iframe>
-      </div>
-      <div class="foot">
-        <div class="note" id="status">
-          本頁使用相對路徑讀取與本檔同一資料夾的 PDF；若線上開啟，會改走 jsDelivr 上的倉庫複本。
+        <div class="viewer">
+          <div class="empty" id="empty">
+            <p>從左側或上方目錄選擇一篇。</p>
+          </div>
+          <div class="fail" id="fail">
+            <p>頁內預覽在這台手機可能被系統擋住，尤其是 10MB 以上的分卷。</p>
+            <p>請改點金色按鈕「開啟 PDF」。</p>
+          </div>
+          <iframe id="frame" class="hidden" title="PDF preview" allow="fullscreen"></iframe>
         </div>
-        <div id="pos"></div>
-      </div>
-    </main>
+        <div class="foot" id="status"></div>
+      </section>
+    </div>
   </div>
 
   <script>
     const FILES = [
-      { id: "readme", group: "前置 Front matter", groupKey: "front", n: "00",
-        file: "Social Quantum Field Theory. README.pdf",
-        en: "README / Opening dossier", zh: "開卷說明與檔案總覽", bytes: 8578253 },
-      { id: "dedication", group: "前置 Front matter", groupKey: "front", n: "01",
-        file: "Dedication.pdf", en: "Dedication", zh: "題獻", bytes: 1060499 },
-      { id: "ack", group: "前置 Front matter", groupKey: "front", n: "02",
-        file: "Acknowledgements.pdf", en: "Acknowledgements", zh: "誌謝", bytes: 1177509 },
-      { id: "author", group: "前置 Front matter", groupKey: "front", n: "03",
-        file: "About the Author.pdf", en: "About the Author", zh: "作者簡介", bytes: 1076009 },
-      { id: "guide", group: "前置 Front matter", groupKey: "front", n: "04",
-        file: "Reader's Guide.pdf", en: "Reader's Guide", zh: "讀法指引", bytes: 1478530 },
-      { id: "roadmap", group: "前置 Front matter", groupKey: "front", n: "05",
-        file: "Edition Roadmap.pdf", en: "Edition Roadmap", zh: "版本路線圖", bytes: 6893588 },
-      { id: "librarian", group: "前置 Front matter", groupKey: "front", n: "06",
-        file: "Librarian's Record. Catalog Entry for the First Edition Archive.pdf",
-        en: "Librarian's Record", zh: "圖書館編目紀錄", bytes: 1318987 },
-      { id: "cert", group: "前置 Front matter", groupKey: "front", n: "07",
-        file: "Archival Certification.pdf", en: "Archival Certification", zh: "典藏證明", bytes: 1393942 },
-      { id: "hist", group: "前置 Front matter", groupKey: "front", n: "08",
-        file: "Historical Note for Future Editions.pdf",
-        en: "Historical Note for Future Editions", zh: "給未來版本的歷史註記", bytes: 1543986 },
-      { id: "compact", group: "全書總冊 Compact copy", groupKey: "compact", n: "A",
-        file: "Social Quantum Field Theory - Chou I-Hsien (First Edition 2026).pdf",
-        en: "First Edition 2026 — compact copy", zh: "第一版 2026 總冊／精簡本", bytes: 5422831 },
-      { id: "vol1", group: "分卷正文 Volumes", groupKey: "volumes", n: "I",
-        file: "Social Quantum Field Theory. First Edition (2026) 1~10 Volume I.pdf",
-        en: "Volume I · Chapters 1–10", zh: "第一卷 · 第 1–10 章", bytes: 11380657 },
-      { id: "vol2", group: "分卷正文 Volumes", groupKey: "volumes", n: "II",
-        file: "Social Quantum Field Theory.  First Edition (2026) 11~19 Volume II.pdf",
-        en: "Volume II · Chapters 11–19", zh: "第二卷 · 第 11–19 章", bytes: 18638837 },
-      { id: "vol3", group: "分卷正文 Volumes", groupKey: "volumes", n: "III",
-        file: "Social Quantum Field Theory 20~30  Volume III.pdf",
-        en: "Volume III · Chapters 20–30", zh: "第三卷 · 第 20–30 章", bytes: 14821315 },
-      { id: "vol4", group: "分卷正文 Volumes", groupKey: "volumes", n: "IV",
-        file: "Social Quantum Field Theory 31~40.pdf",
-        en: "Volume IV · Chapters 31–40", zh: "第四卷 · 第 31–40 章", bytes: 14942628 },
-      { id: "vol5", group: "分卷正文 Volumes", groupKey: "volumes", n: "V",
-        file: "Social Quantum Field Theory 41~51.pdf",
-        en: "Volume V · Chapters 41–51", zh: "第五卷 · 第 41–51 章", bytes: 17951108 },
-      { id: "afterword", group: "後置 Back matter", groupKey: "back", n: "09",
-        file: "Afterword The Mathematical Vision of Social Quantum Field Theory.pdf",
-        en: "Afterword · Mathematical Vision", zh: "後記 · 數學視野", bytes: 1460847 },
-      { id: "postscript", group: "後置 Back matter", groupKey: "back", n: "10",
-        file: "Postscript Reflections on the Mathematical Philosophy of Social Quantum Field Theory.pdf",
-        en: "Postscript · Mathematical Philosophy", zh: "附記 · 數學哲學省思", bytes: 1488412 },
-      { id: "applw", group: "後置 Back matter", groupKey: "back", n: "11",
-        file: "Appendix L ~W.pdf", en: "Appendix L–W", zh: "附錄 L–W", bytes: 15173750 },
-      { id: "appxy", group: "後置 Back matter", groupKey: "back", n: "12",
-        file: "Appendix X ~Y.pdf", en: "Appendix X–Y", zh: "附錄 X–Y", bytes: 1191010 },
-      { id: "refs", group: "後置 Back matter", groupKey: "back", n: "13",
-        file: "References.pdf", en: "References", zh: "參考文獻", bytes: 1690395 },
-      { id: "index", group: "後置 Back matter", groupKey: "back", n: "14",
-        file: "Index.pdf", en: "Index", zh: "索引", bytes: 1451516 }
+      { id: "readme", group: "前置 Front matter", n: "00", file: "Social Quantum Field Theory. README.pdf", en: "README / Opening dossier", zh: "開卷說明與檔案總覽", bytes: 8578253 },
+      { id: "dedication", group: "前置 Front matter", n: "01", file: "Dedication.pdf", en: "Dedication", zh: "題獻", bytes: 1060499 },
+      { id: "ack", group: "前置 Front matter", n: "02", file: "Acknowledgements.pdf", en: "Acknowledgements", zh: "誌謝", bytes: 1177509 },
+      { id: "author", group: "前置 Front matter", n: "03", file: "About the Author.pdf", en: "About the Author", zh: "作者簡介", bytes: 1076009 },
+      { id: "guide", group: "前置 Front matter", n: "04", file: "Reader's Guide.pdf", en: "Reader's Guide", zh: "讀法指引", bytes: 1478530 },
+      { id: "roadmap", group: "前置 Front matter", n: "05", file: "Edition Roadmap.pdf", en: "Edition Roadmap", zh: "版本路線圖", bytes: 6893588 },
+      { id: "librarian", group: "前置 Front matter", n: "06", file: "Librarian's Record. Catalog Entry for the First Edition Archive.pdf", en: "Librarian's Record", zh: "圖書館編目紀錄", bytes: 1318987 },
+      { id: "cert", group: "前置 Front matter", n: "07", file: "Archival Certification.pdf", en: "Archival Certification", zh: "典藏證明", bytes: 1393942 },
+      { id: "hist", group: "前置 Front matter", n: "08", file: "Historical Note for Future Editions.pdf", en: "Historical Note for Future Editions", zh: "給未來版本的歷史註記", bytes: 1543986 },
+      { id: "compact", group: "全書總冊 Compact copy", n: "A", file: "Social Quantum Field Theory - Chou I-Hsien (First Edition 2026).pdf", en: "First Edition 2026 — compact copy", zh: "第一版 2026 總冊／精簡本", bytes: 5422831 },
+      { id: "vol1", group: "分卷正文 Volumes", n: "I", file: "Social Quantum Field Theory. First Edition (2026) 1~10 Volume I.pdf", en: "Volume I · Chapters 1–10", zh: "第一卷 · 第 1–10 章", bytes: 11380657 },
+      { id: "vol2", group: "分卷正文 Volumes", n: "II", file: "Social Quantum Field Theory.  First Edition (2026) 11~19 Volume II.pdf", en: "Volume II · Chapters 11–19", zh: "第二卷 · 第 11–19 章", bytes: 18638837 },
+      { id: "vol3", group: "分卷正文 Volumes", n: "III", file: "Social Quantum Field Theory 20~30  Volume III.pdf", en: "Volume III · Chapters 20–30", zh: "第三卷 · 第 20–30 章", bytes: 14821315 },
+      { id: "vol4", group: "分卷正文 Volumes", n: "IV", file: "Social Quantum Field Theory 31~40.pdf", en: "Volume IV · Chapters 31–40", zh: "第四卷 · 第 31–40 章", bytes: 14942628 },
+      { id: "vol5", group: "分卷正文 Volumes", n: "V", file: "Social Quantum Field Theory 41~51.pdf", en: "Volume V · Chapters 41–51", zh: "第五卷 · 第 41–51 章", bytes: 17951108 },
+      { id: "afterword", group: "後置 Back matter", n: "09", file: "Afterword The Mathematical Vision of Social Quantum Field Theory.pdf", en: "Afterword · Mathematical Vision", zh: "後記 · 數學視野", bytes: 1460847 },
+      { id: "postscript", group: "後置 Back matter", n: "10", file: "Postscript Reflections on the Mathematical Philosophy of Social Quantum Field Theory.pdf", en: "Postscript · Mathematical Philosophy", zh: "附記 · 數學哲學省思", bytes: 1488412 },
+      { id: "applw", group: "後置 Back matter", n: "11", file: "Appendix L ~W.pdf", en: "Appendix L–W", zh: "附錄 L–W", bytes: 15173750 },
+      { id: "appxy", group: "後置 Back matter", n: "12", file: "Appendix X ~Y.pdf", en: "Appendix X–Y", zh: "附錄 X–Y", bytes: 1191010 },
+      { id: "refs", group: "後置 Back matter", n: "13", file: "References.pdf", en: "References", zh: "參考文獻", bytes: 1690395 },
+      { id: "index", group: "後置 Back matter", n: "14", file: "Index.pdf", en: "Index", zh: "索引", bytes: 1451516 }
     ];
 
     const REPO = "SUDOZAPP/SQFT_Second_Edition";
-    const BRANCH = "main";
-    const REMOTE_DIR = "originals";
+    const DIR = "originals";
+    const isFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    const isCoarse = window.matchMedia("(pointer: coarse)").matches || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    const tocEl = document.getElementById("toc");
-    const frame = document.getElementById("frame");
-    const empty = document.getElementById("empty");
-    const statusEl = document.getElementById("status");
-    const posEl = document.getElementById("pos");
-    let currentIndex = -1;
-    let localMode = null;
+    let current = -1;
+    let localMode = false;
 
-    function encodePath(name) {
-      return name.split("/").map(encodeURIComponent).join("/");
-    }
-    function formatBytes(n) {
-      if (n >= 1048576) return (n / 1048576).toFixed(1) + " MB";
-      return Math.round(n / 1024) + " KB";
-    }
-    function remoteUrl(file) {
-      return `https://cdn.jsdelivr.net/gh/${REPO}@${BRANCH}/${REMOTE_DIR}/${encodePath(file)}`;
-    }
-    function localUrl(file) {
-      return encodePath(file);
-    }
-    function githubBlob(file) {
-      return `https://github.com/${REPO}/blob/${BRANCH}/${REMOTE_DIR}/${encodePath(file)}`;
-    }
-    function pdfJsUrl(fileUrl) {
-      return "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodeURIComponent(fileUrl);
-    }
+    const $ = (id) => document.getElementById(id);
+    const enc = (name) => name.split("/").map(encodeURIComponent).join("/");
+    const fmt = (n) => (n >= 1048576 ? (n / 1048576).toFixed(1) + " MB" : Math.round(n / 1024) + " KB");
+    const remote = (file) => `https://cdn.jsdelivr.net/gh/${REPO}@main/${DIR}/${enc(file)}`;
+    const blob = (file) => `https://github.com/${REPO}/blob/main/${DIR}/${enc(file)}`;
 
-    async function detectLocal() {
-      try {
-        const res = await fetch(encodePath("cover_opt.jpg"), { method: "HEAD" });
-        return res.ok;
-      } catch {
-        return false;
-      }
-    }
-
-    function sourceFor(file) {
-      if (localMode) return { href: localUrl(file), embed: localUrl(file), label: "本機相對路徑" };
-      const href = remoteUrl(file);
-      return { href, embed: pdfJsUrl(href), label: "線上 jsDelivr + PDF.js" };
+    function src(file) {
+      const href = localMode ? enc(file) : remote(file);
+      return { href, github: blob(file) };
     }
 
     function renderToc(filter = "") {
@@ -403,75 +302,92 @@
         if (!last || last.name !== item.group) groups.push({ name: item.group, items: [item] });
         else last.items.push(item);
       }
-      tocEl.innerHTML = groups.map(g => `
+      $("toc").innerHTML = groups.map(g => `
         <section class="group">
           <h2>${g.name}</h2>
           ${g.items.map(item => {
             const i = FILES.indexOf(item);
-            return `
-              <button class="item${i === currentIndex ? " active" : ""}" data-index="${i}">
-                <span class="num">${item.n}</span>
-                <span>
-                  <span class="title">${item.en}</span>
-                  <span class="sub">${item.zh}</span>
-                </span>
-                <span class="meta">${formatBytes(item.bytes)}</span>
-              </button>`;
+            return `<button class="item${i === current ? " active" : ""}" data-index="${i}">
+              <span class="num">${item.n}</span>
+              <span><span class="title">${item.en}</span><span class="sub">${item.zh}</span></span>
+              <span class="meta">${fmt(item.bytes)}</span>
+            </button>`;
           }).join("")}
         </section>`).join("") || `<p class="lede">沒有符合的篇目。</p>`;
     }
 
-    function openAt(index) {
+    function openAt(index, autoLaunch) {
       if (index < 0 || index >= FILES.length) return;
-      currentIndex = index;
+      current = index;
       const item = FILES[index];
-      const src = sourceFor(item.file);
-      document.getElementById("kicker").textContent = item.group;
-      document.getElementById("now-title").textContent = item.en;
-      document.getElementById("now-zh").textContent = item.zh + " · " + item.file;
-      document.getElementById("now-size").textContent = formatBytes(item.bytes);
-      document.getElementById("btn-open").href = src.href;
-      document.getElementById("btn-download").href = src.href;
-      document.getElementById("btn-download").setAttribute("download", item.file);
-      document.getElementById("btn-prev").disabled = index === 0;
-      document.getElementById("btn-next").disabled = index === FILES.length - 1;
-      empty.classList.add("hidden");
-      frame.classList.remove("hidden");
-      frame.src = src.embed;
-      statusEl.innerHTML = `${src.label} · <a href="${githubBlob(item.file)}" target="_blank" rel="noopener">GitHub 原檔</a>`;
-      posEl.textContent = `${index + 1} / ${FILES.length}`;
+      const s = src(item.file);
+      $("kicker").textContent = item.group + " · " + fmt(item.bytes);
+      $("now-title").textContent = item.en;
+      $("now-zh").textContent = item.zh;
+      $("btn-open").href = s.href;
+      $("btn-download").href = s.href;
+      $("btn-download").setAttribute("download", item.file);
+      $("btn-github").href = s.github;
+      $("btn-prev").disabled = index === 0;
+      $("btn-next").disabled = index === FILES.length - 1;
+      document.body.classList.add("reading");
+      $("btn-back").classList.toggle("hidden", isFinePointer && !isCoarse);
       location.hash = item.id;
-      renderToc(document.getElementById("search").value);
-      const active = tocEl.querySelector(".item.active");
-      if (active) active.scrollIntoView({ block: "nearest" });
+      renderToc($("search").value);
+
+      $("empty").classList.add("hidden");
+      $("fail").style.display = "flex";
+      $("frame").classList.add("hidden");
+
+      // Desktop / large screen: try in-page preview.
+      // Phones: do not iframe 10MB+ PDFs; they show title and a blank pane.
+      const tooHeavyForEmbed = item.bytes > 4_000_000 && isCoarse;
+      if (!tooHeavyForEmbed && (isFinePointer || item.bytes < 3_000_000)) {
+        $("fail").style.display = "none";
+        $("frame").classList.remove("hidden");
+        $("frame").src = s.href;
+      }
+
+      $("status").innerHTML = tooHeavyForEmbed || isCoarse
+        ? `${item.file}<br>手機請用金色「開啟 PDF」。系統閱讀器才會顯示第 1–10 章全文。`
+        : `${item.file}`;
+
+      if (autoLaunch && isCoarse) {
+        window.location.href = s.href;
+      }
     }
 
-    tocEl.addEventListener("click", (e) => {
+    $("toc").addEventListener("click", (e) => {
       const btn = e.target.closest("[data-index]");
       if (!btn) return;
-      openAt(Number(btn.dataset.index));
+      openAt(Number(btn.dataset.index), false);
+      if (isCoarse) window.scrollTo(0, 0);
     });
-    document.getElementById("btn-prev").addEventListener("click", () => openAt(currentIndex - 1));
-    document.getElementById("btn-next").addEventListener("click", () => openAt(currentIndex + 1));
-    document.getElementById("search").addEventListener("input", (e) => renderToc(e.target.value));
-    document.addEventListener("keydown", (e) => {
-      if (e.target.matches("input, textarea")) return;
-      if (e.key === "ArrowLeft") openAt(currentIndex <= 0 ? 0 : currentIndex - 1);
-      if (e.key === "ArrowRight") openAt(currentIndex < 0 ? 0 : currentIndex + 1);
+    $("btn-prev").addEventListener("click", () => openAt(current < 0 ? 0 : current - 1, false));
+    $("btn-next").addEventListener("click", () => openAt(current + 1, false));
+    $("btn-back").addEventListener("click", () => {
+      document.body.classList.remove("reading");
+      $("btn-back").classList.add("hidden");
+    });
+    $("search").addEventListener("input", (e) => renderToc(e.target.value));
+
+    $("btn-open").addEventListener("click", (e) => {
+      if (current < 0) { e.preventDefault(); return; }
     });
 
     (async function init() {
-      localMode = await detectLocal();
-      const cover = document.getElementById("cover");
-      cover.src = localMode ? encodePath("cover_opt.jpg") : remoteUrl("cover_opt.jpg");
-      cover.onerror = () => { cover.src = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${REMOTE_DIR}/cover_opt.jpg`; };
+      try {
+        const res = await fetch(enc("cover_opt.jpg"), { method: "HEAD" });
+        localMode = res.ok;
+      } catch { localMode = false; }
+      $("cover").src = localMode ? enc("cover_opt.jpg") : remote("cover_opt.jpg");
       renderToc();
       const wanted = location.hash.replace("#", "");
       const idx = FILES.findIndex(x => x.id === wanted);
-      if (idx >= 0) openAt(idx);
-      statusEl.textContent = localMode
-        ? "已偵測到同資料夾 PDF，將以本機檔案內嵌閱讀。"
-        : "未找到同資料夾 PDF。線上模式改以 jsDelivr 載入，並用 PDF.js 在頁內閱讀。請把本檔放到 originals/ 後用瀏覽器開啟，即可完全離線。";
+      if (idx >= 0) openAt(idx, false);
+      $("status").textContent = localMode
+        ? "已找到同資料夾 PDF。"
+        : "線上模式。手機請點篇目後按「開啟 PDF」。";
     })();
   </script>
 </body>
