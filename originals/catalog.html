@@ -216,7 +216,7 @@
         <div class="cover-wrap"><img id="cover" alt="SQFT cover" /></div>
         <p class="lede">
           First-edition PDFs in book order.
-          <span class="zh">第一版原樣 PDF。手機請點篇目，再用「開啟 PDF」閱讀全文。</span>
+          <span class="zh">第一版原樣 PDF。手機點篇目後會直接交給系統 PDF 閱讀器開啟全文。</span>
         </p>
         <input class="search" id="search" type="search" placeholder="搜尋篇名、卷次…" enterkeyhint="search" />
         <nav id="toc"></nav>
@@ -226,7 +226,7 @@
         <div class="reader-bar">
           <div class="kicker" id="kicker">Archive</div>
           <h1 id="now-title">選擇一篇開始閱讀</h1>
-          <div class="zh" id="now-zh">直式手機以系統閱讀器開啟 PDF，較不容易空白。</div>
+          <div class="zh" id="now-zh">手機以系統／瀏覽器 PDF 閱讀器開啟，避免大型 PDF 頁內預覽空白。</div>
         </div>
         <div class="actions">
           <a class="btn btn-gold" id="btn-open" href="#" target="_blank" rel="noopener">開啟 PDF（建議）</a>
@@ -285,11 +285,19 @@
     const enc = (name) => name.split("/").map(encodeURIComponent).join("/");
     const fmt = (n) => (n >= 1048576 ? (n / 1048576).toFixed(1) + " MB" : Math.round(n / 1024) + " KB");
     const remote = (file) => `https://cdn.jsdelivr.net/gh/${REPO}@main/${DIR}/${enc(file)}`;
+    const raw = (file) => `https://raw.githubusercontent.com/${REPO}/refs/heads/main/${DIR}/${enc(file)}`;
     const blob = (file) => `https://github.com/${REPO}/blob/main/${DIR}/${enc(file)}`;
 
     function src(file) {
       const href = localMode ? enc(file) : remote(file);
-      return { href, github: blob(file) };
+      return { href, raw: localMode ? enc(file) : raw(file), github: blob(file) };
+    }
+
+    function openPdfOnMobile(item) {
+      const s = src(item.file);
+      // Same-tab navigation is more reliable than target=_blank in Android WebView / LINE.
+      // Use the direct raw file online so the OS/browser can hand the PDF to its reader.
+      window.location.assign(localMode ? s.href : s.raw);
     }
 
     function renderToc(filter = "") {
@@ -324,8 +332,10 @@
       $("kicker").textContent = item.group + " · " + fmt(item.bytes);
       $("now-title").textContent = item.en;
       $("now-zh").textContent = item.zh;
-      $("btn-open").href = s.href;
-      $("btn-download").href = s.href;
+      $("btn-open").href = isCoarse ? (localMode ? s.href : s.raw) : s.href;
+      if (isCoarse) $("btn-open").removeAttribute("target");
+      else $("btn-open").setAttribute("target", "_blank");
+      $("btn-download").href = isCoarse ? (localMode ? s.href : s.raw) : s.href;
       $("btn-download").setAttribute("download", item.file);
       $("btn-github").href = s.github;
       $("btn-prev").disabled = index === 0;
@@ -348,20 +358,27 @@
         $("frame").src = s.href;
       }
 
-      $("status").innerHTML = tooHeavyForEmbed || isCoarse
-        ? `${item.file}<br>手機請用金色「開啟 PDF」。系統閱讀器才會顯示第 1–10 章全文。`
+      $("status").innerHTML = isCoarse
+        ? `${item.file}<br>手機版會直接交給系統／瀏覽器 PDF 閱讀器開啟，避免大型 PDF 頁內預覽空白。`
         : `${item.file}`;
 
       if (autoLaunch && isCoarse) {
-        window.location.href = s.href;
+        openPdfOnMobile(item);
       }
     }
 
     $("toc").addEventListener("click", (e) => {
       const btn = e.target.closest("[data-index]");
       if (!btn) return;
-      openAt(Number(btn.dataset.index), false);
-      if (isCoarse) window.scrollTo(0, 0);
+      const index = Number(btn.dataset.index);
+
+      if (isCoarse) {
+        current = index;
+        openPdfOnMobile(FILES[index]);
+        return;
+      }
+
+      openAt(index, false);
     });
     $("btn-prev").addEventListener("click", () => openAt(current < 0 ? 0 : current - 1, false));
     $("btn-next").addEventListener("click", () => openAt(current + 1, false));
@@ -373,6 +390,10 @@
 
     $("btn-open").addEventListener("click", (e) => {
       if (current < 0) { e.preventDefault(); return; }
+      if (isCoarse) {
+        e.preventDefault();
+        openPdfOnMobile(FILES[current]);
+      }
     });
 
     (async function init() {
